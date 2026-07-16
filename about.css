@@ -1,0 +1,139 @@
+    .about{
+            background-color:#d0fafa; 
+            height: 880px;
+            width: 98.2%;
+             border-radius: 40px;
+        box-shadow:10px 10px 20px #a0f2ff;
+        }
+        .aboutme{
+             font-size: 30px;
+            color: #000609;
+            text-shadow: 0px 0px 24px #54b7f4;
+            padding: 20px 40px;
+            
+            padding-left: 1%;
+            padding-top: 14%;
+            font-size: 50px;
+        }
+        .descriptionabout p{
+             font-size: 22px;
+            color:#000609;
+            padding: 20px 40px;
+            
+            width: 100%;
+            width: 1060px;
+            padding-left: 1%;
+            
+        }
+        .image{
+            float: left;
+            border-radius: 50%;
+            position: absolute;
+            margin-left: 69%;
+            margin-top: -37%;
+            
+        }
+        .image img{
+            
+            max-height: 100%;
+            height: 450px;
+            width: 450px;
+        }
+        /* Small desktop / laptop screens — catches the gap your 782px query misses */
+@media (max-width: 1450px) and (min-width: 783px) {
+    .image img {
+    float: left;
+    width: 120%;
+    margin-left: 21%;
+    }
+}
+@media (max-width: 782px) {
+    .remove{
+        display: none;
+    }
+    .about {
+        width: 100%;
+        min-height: auto;
+        overflow-x: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        grid-template-areas:
+            "heading heading"
+            "image   desc";
+        gap: 20px 25px;
+        align-items: center;
+        padding: 30px 20px;
+        position: relative;
+    }
+
+    .aboutme {
+        grid-area: heading;
+        padding: 10px 20px;
+        font-size: clamp(28px, 6vw, 40px);
+        text-align: center;
+        letter-spacing: 1px;
+        margin: 0;
+    }
+
+    .image {
+        grid-area: image;
+        position: static;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image img {
+        width: 100%;
+        max-width: 154px; /* was 220px, reduced 30% */
+        height: clamp(196px, 31.5vh, 294px); /* was clamp(280px, 45vh, 420px), reduced 30% */
+        object-fit: cover;
+        object-position: top;
+        display: block;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(7, 148, 235, 0.25);
+        border: 1px solid #addfff;
+    }
+
+    .descriptionabout {
+        grid-area: desc;
+    }
+
+    .descriptionabout p {
+        text-align: left;
+        font-size: clamp(14px, 3vw, 17px);
+        line-height: 1.6;
+        padding: 10px 15px;
+        width: auto;
+        margin-top: 0;
+    }
+}
+
+/* Small phones — not enough room for side-by-side, stack instead */
+@media (max-width: 560px) {
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "heading"
+            "image"
+            "desc";
+        gap: 15px;
+        padding: 25px 15px;
+    }
+
+    .aboutme {
+        font-size: clamp(24px, 7.5vw, 32px);
+    }
+
+    .image img {
+        max-width: 140px; /* was 200px, reduced 30% */
+        height: 182px; /* was 260px, reduced 30% */
+        margin: 0 auto;
+    }
+
+    .descriptionabout p {
+        text-align: center;
+        font-size: clamp(14px, 3.8vw, 17px);
+        padding: 10px 20px;
+    }
+}
