@@ -1,3 +1,4 @@
+<<<<<<< HEAD
         .projects{
             background-color: #d0fafa; 
             height: 1460px;
@@ -263,4 +264,270 @@
         font-size: clamp(8px, 2vw, 10px);
         padding: 4px 7px;
     }
+=======
+        .projects{
+            background-color: #d0fafa; 
+            height: 1460px;
+            width: 98.2%;
+            border-radius: 40px;
+        box-shadow:10px 10px 20px #a0f2ff;
+        }
+        .heading{
+             font-size: 30px;
+            color: #000609;
+            text-shadow: 0px 0px 24px #009dff;
+            padding-top: 7%;
+            font-size: 50px;
+            text-align: center;
+        
+        }
+        .work{
+            
+             font-size: 22px;
+            color:#000609;
+            text-shadow: 0px 0px 5px #bdc6ea;
+            text-align: center;
+            margin-left: 10%;
+        }
+ .container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:115px;
+    padding-left: 69px;
+    margin-top: 46px;
+}
+
+.card{
+    background:#d3ffff;
+    box-shadow:0 0 20px #9bffff;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:10px 10px 20px #000609;
+    backdrop-filter:blur(10px);
+    width: 300px;
+    height: 500px;
+    gap: 2rem;
+    transition:.4s;
+    z-index:  10;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+     box-shadow:0 0 20px #7effff;
+}
+
+.card img{
+    width:100%;
+    border-radius:15px;
+}
+
+.buttons a{
+    margin-right: 0%;
+    margin-top: 0%;
+
+}
+.headin{
+            color: #000609;
+            text-shadow: 0px 0px 24px #54b7f4;
+            text-align: center;
+            font-size: 25px;
+            margin-top: 20px;
+}
+.de{
+    
+            color:#000609;
+            text-shadow: 0px 0px 5px #bdc6ea;
+            text-align: center;
+            font-size: 15px;
+            margin-top: 20px;
+}
+.tags span{
+    
+    display:inline-block;
+    margin: 5px;
+    text-align: center;
+    justify-content:center;
+    color: #000609;
+    padding: 5px 12px;
+    border-radius: 50px;
+    border:1px solid #9bffff;
+    box-shadow:0 0 6px #009dff;
+        margin-left: 34px;
+}
+
+.buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-left: -10px; /* reduced from 8px */
+    }
+
+.buttons a{
+    display: inline-block;
+    text-decoration:none;
+    padding: 10px 20px;
+    color:#000609;
+    padding:10px 12px;
+    border-radius:90px;
+    transition:.4s;
+    margin-top: 10%;
+    background-color: #bee5fd;
+    border-radius:50px;
+    border:1px solid #9bffff;
+    box-shadow:0 0 8px #009dff;
+}
+.buttons a:hover{
+    background-color: #7effff;
+}
+@media (max-width: 782px) {
+    .projects {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        overflow-x: hidden;
+        padding-bottom: 15px;
+    }
+
+    .heading {
+        font-size: clamp(22px, 6vw, 32px);
+        text-align: center;
+        margin-bottom: 4px; /* tightened */
+    }
+
+    .work {
+        font-size: clamp(13px, 3.2vw, 16px);
+        padding: 0 20px;
+        margin-top: 4px; /* reduced from 10px */
+        text-align: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem; /* slightly tightened */
+        padding: clamp(8px, 2.5vw, 14px);
+        margin-top: 12px; /* reduced from 3% — fixed small gap instead */
+        height: auto;
+    }
+
+    .card {
+        height: auto;
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: clamp(90px, 22vw, 130px);
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 2px; /* reduced */
+    }
+
+    .headin {
+        padding: 4px 4px 0; /* tightened top padding */
+        font-size: clamp(13px, 3.2vw, 16px);
+        text-align: center;
+        margin: 0;
+        margin-top: -10px;
+        line-height: 1.2;
+    }
+
+    .de {
+        padding: 2px 4px 0; /* tightened */
+        font-size: clamp(10px, 2.4vw, 12px);
+        text-align: center;
+        margin: 0;
+        margin-top: -26px;
+        line-height: 1.3;
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+        margin-top: -15px; /* reduced from 8px */
+    }
+
+    .tags span {
+        display: inline-flex;
+        padding: clamp(3px, 1.2vw, 6px) clamp(7px, 2vw, 10px);
+        font-size: clamp(9px, 2.2vw, 11px);
+        white-space: nowrap;
+        background: #d0f3ff;
+        border: 1px solid #a0dfff;
+        border-radius: 20px;
+        color: #0c1013;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: -29px; /* reduced from 8px */
+    }
+
+    .buttons a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: clamp(5px, 1.6vw, 8px) clamp(8px, 2.4vw, 12px);
+        font-size: clamp(9px, 2.2vw, 11px);
+        white-space: nowrap;
+        border-radius: 20px;
+        text-decoration: none;
+        background: #a0dfff;
+        color: #0d1b3e;
+        font-weight: 600;
+    }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+    .heading {
+        font-size: clamp(18px, 5.5vw, 24px);
+    }
+
+    .work {
+        margin-top: 3px;
+    }
+
+    .container {
+        gap: 0.7rem;
+        padding: 6px;
+        margin-top: 8px;
+    }
+
+    .card {
+        padding: 8px;
+    }
+
+    .card img {
+        height: 75px;
+    }
+
+    .headin {
+        font-size: clamp(11px, 3vw, 13px);
+    }
+
+    .de {
+        font-size: clamp(9px, 2.3vw, 10px);
+    }
+
+    .tags span,
+    .buttons a {
+        font-size: clamp(8px, 2vw, 10px);
+        padding: 4px 7px;
+    }
+>>>>>>> 77eee5169534e5289591b63037b0afc84edd589e
 }
