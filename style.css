@@ -622,7 +622,7 @@ body.dark .theme-toggle{
     transform:translateY(110%);
     animation:rise 0.7s cubic-bezier(.2,.8,.2,1) forwards;
   }
- 
+}
   @keyframes rise{
     to{ transform:translateY(0); }
   }

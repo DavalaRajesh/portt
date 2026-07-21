@@ -160,6 +160,7 @@
     width:100%;
     border-radius:15px;
 }
+}
 @media (max-width: 782px) {
     .skills {
         width: 100%;
