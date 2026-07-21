@@ -379,7 +379,7 @@
 .buttons a:hover{
     background-color: #7effff;
 }
-}
+
 @media (max-width: 782px) {
     .projects {
         width: 100%;
